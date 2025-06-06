@@ -7,6 +7,7 @@ import useFirestore from "@/hooks/useFirestore";
 import useDebounce from "@/hooks/useDebounce";
 import QuoteItem from "@/components/QuoteItem";
 import Loading from "./Loading";
+import Link from "next/link";
 
 type QuoteType = {
   id: string;
@@ -176,7 +177,9 @@ const QuotesList = () => {
         {user?.role ? (
           <div className="voting-power">Voting power : {isVoteAllowed ? 1 : 0}</div>
         ) : (
-          <div className="voting-power">Login required to vote</div>
+          <div className="voting-power">
+            <Link href="/auth/login">Login</Link> required to vote
+          </div>
         )}
       </div>
       {isLoading ? (

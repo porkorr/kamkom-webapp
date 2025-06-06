@@ -30,7 +30,7 @@ const FormAddQuote = () => {
       message.success("Successfully added a new quote!");
     } catch (e) {
       // console.error("Error sending request:", e);
-      message.error("Something went wrong.");
+      // message.error("Something went wrong.");
     } finally {
       setLoading(false);
     }
