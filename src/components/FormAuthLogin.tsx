@@ -44,7 +44,7 @@ const FormAuthLogin = () => {
       </Form.Item>
       <Form.Item>
         <Button htmlType="submit" size="large" loading={loading}>
-          {!loading ? "Let's Go" : ""}
+          {!loading ? "Login" : ""}
         </Button>
       </Form.Item>
     </Form>
