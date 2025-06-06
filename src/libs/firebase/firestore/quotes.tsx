@@ -12,12 +12,6 @@ import {
 } from "firebase/firestore";
 import { fsdb } from "@/libs/firebase";
 
-// export const getQuotes = async () => {
-//   const qouteRef = collection(fsdb, "quotes");
-//   const snapshot = await getDocs(qouteRef);
-//   return snapshot;
-// };
-
 export const createQuoteFSDB = async (text: string) => {
   try {
     await addDoc(collection(fsdb, "quotes"), {

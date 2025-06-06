@@ -281,13 +281,25 @@ body {
   }
 }
 
-.authentication {
+.main-authentication {
   width: 100%;
-  height: calc(100vh - 170px);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
+  gap: 20px;
+  .logo {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      gap: 5px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
   .modal {
     width: 500px;
     height: auto;
@@ -295,6 +307,7 @@ body {
     border-radius: 10px;
     background-color: rgba(40, 56, 72, 1);
     @media (max-width: 580px) {
+      width: 100%;
       border-radius: 10px;
     }
     .text-header {

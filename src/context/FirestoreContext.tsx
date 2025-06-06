@@ -3,7 +3,7 @@
 import { createContext, useState, useEffect } from "react";
 import { auth, fsdb } from "@/libs/firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import { collection, doc, onSnapshot, query, orderBy } from "firebase/firestore";
+import { collection, doc, onSnapshot, query } from "firebase/firestore";
 import Loading from "@/components/Loading";
 
 type FirestoreContextType = {

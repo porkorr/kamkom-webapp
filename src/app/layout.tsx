@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import AppProvider from "@/providers/AppProvider";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import "@/styles/main.scss";
 
 export const metadata: Metadata = {
@@ -21,11 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head />
       <body>
-        <AppProvider>
-          <Header />
-          {children}
-          <Footer />
-        </AppProvider>
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
