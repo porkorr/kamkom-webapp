@@ -225,13 +225,15 @@ body {
           cursor: pointer;
         }
         .action-voted {
+          border: 1px solid rgba(199, 242, 132, 1);
           background-color: rgba(199, 242, 132, 1);
           color: rgba(19, 28, 37, 1);
           cursor: default;
         }
         .action-delete {
           border: 1px solid rgba(249, 69, 105, 1);
-          color: rgba(249, 69, 105, 1);
+          background-color: rgba(249, 69, 105, 1);
+          color: rgba(19, 28, 37, 1);
           cursor: pointer;
         }
       }

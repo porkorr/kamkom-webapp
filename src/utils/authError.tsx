@@ -61,7 +61,7 @@ const authError = (error: { code: AuthErrorCode }): AuthErrorResult => {
     case "auth/user-token-expired":
       return { message: "Your session has expired. Please log in again.", field: "email" };
     case "auth/invalid-credential":
-      return { message: "The provided credential is invalid.", field: "password" };
+      return { message: "The provided credential is invalid.", field: "email" };
     case "auth/popup-closed-by-user":
       return { message: "The popup was closed before completing the sign-in.", field: "email" };
     case "auth/popup-blocked":
